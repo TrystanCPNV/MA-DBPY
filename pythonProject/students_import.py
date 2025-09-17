@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 # Charger les variables d'environnement
-load_dotenv("Secrete info.env")
+load_dotenv("Secrete_info.env")
 
 
 def get_connection():
@@ -41,7 +41,7 @@ def import_students(file_path):
 
             if classe_id:
                 cursor.execute(
-                    "INSERT INTO students (prenom, nom, classe_id) VALUES (%s, %s, %s);",
+                    "INSERT INTO students (firstname, lastname, class_id) VALUES (%s, %s, %s);",
                     (prenom, nom, classe_id[0])
                 )
             else:

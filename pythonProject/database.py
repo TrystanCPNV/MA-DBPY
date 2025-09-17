@@ -3,7 +3,7 @@ import mysql.connector
 import os
 from dotenv import load_dotenv
 
-load_dotenv("Secrete info.env")
+load_dotenv("Secrete_info.env")
 
 
 def get_connection():
